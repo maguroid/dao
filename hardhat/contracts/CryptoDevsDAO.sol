@@ -35,7 +35,7 @@ contract CryptoDevsDAO is Ownable {
         NAY
     }
 
-    mapping(uint256 => Proposal) proposals;
+    mapping(uint256 => Proposal) public proposals;
     uint256 public numProposals;
 
     IFakeNFTMarketplace nftMarketplace;
